@@ -1,0 +1,16 @@
+{
+  "development": {
+    "username": "pizzafood",
+    "password": "pizzafood",
+    "database": "pizzafood",
+    "host": "127.0.0.1",
+    "dialect": "postgres"
+  },
+  "test": {
+    "username": "pizzafood",
+    "password": "pizzafood",
+    "database": "test_pizzafood",
+    "host": "127.0.0.1",
+    "dialect": "postgres"
+  }
+}
