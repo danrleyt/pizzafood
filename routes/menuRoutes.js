@@ -1,12 +1,5 @@
-const menuController = require('../controllers').menu;
+const { getMenu } = require('../controllers/menuController');
 
 module.exports = app => {
-  app.get('/api/menus', async (req, res) => {
-    try {
-      const menus = await menuController.list(100);
-      res.send(menus);
-    } catch (error) {
-      res.status(400).send(error);
-    }
-  });
+  app.get('/api/menus', getMenu);
 };
